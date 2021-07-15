@@ -3,15 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReusableBtnComponent } from './reusable-btn/reusable-btn.component';
+import { NavBarComponent } from './header/nav-bar.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReusableBtnComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
+  exports: [ ReusableBtnComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,43 @@
+.btn {
+  width: 81px;
+  height: 36px;
+  background: #e0e0e0;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn p {
+  width: max-content;
+  height: 20px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #3f3f3f;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #aeaeae;
+  cursor: pointer;
+}
+
+.outline {
+  border: 1px solid #3d5afe;
+  background: #fff;
+  box-shadow: none;
+}
+
+.outline p {
+  color: #3d5afe;
+}
+
+.outline:hover,
+.outline:focus {
+  background: rgba(41, 98, 255, 0.1);
+}
