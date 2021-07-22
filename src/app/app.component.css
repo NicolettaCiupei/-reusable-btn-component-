@@ -1,3 +1,116 @@
-.side-page {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
+.list {
+  width: max-content;
+  height: max-content;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4f4f4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-area: list;
 }
+
+.right-side-page {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(10, 5rem);
+  grid-template-areas:
+    'list . . .'
+    'btn-default . . .'
+    'btn-outline . . .'
+    'btn-text . . .'
+    'btn-disable-shadow . . .'
+    'btn-disabled btn-disabled-text . .'
+    'btn-left-icon btn-right-icon . .'
+    'btn-sm-size btn-md-size btn-lg-size .'
+    'btn-colour-default btn-colour-primary btn-colour-secondary btn-colour-danger';
+}
+
+.btn-division {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.btn-division > p {
+  font-family: Ubuntu Mono;
+  height: 66px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 118px;
+  color: #333333;
+}
+
+.btn-default {
+  grid-area: btn-default;
+}
+
+.btn-outline {
+  grid-area: btn-outline;
+}
+
+.btn-text {
+  grid-area: btn-text;
+}
+
+.btn-disable-shadow {
+  grid-area: btn-disable-shadow;
+}
+
+.btn-disabled {
+  grid-area: btn-disabled;
+}
+
+.btn-disabled-text {
+  grid-area: btn-disabled-text;
+}
+
+.btn-left-icon {
+  grid-area: btn-left-icon;
+}
+
+.btn-right-icon {
+  grid-area: btn-right-icon;
+}
+
+.btn-sm-size {
+  grid-area: btn-sm-size;
+}
+
+.btn-md-size {
+  grid-area: btn-md-size;
+}
+
+.btn-lg-size {
+  grid-area: btn-lg-size;
+}
+
+.btn-colour-default {
+  grid-area: btn-colour-default;
+}
+
+.btn-colour-primary {
+  grid-area: btn-colour-primary;
+}
+
+.btn-colour-secondary {
+  grid-area: btn-colour-secondary;
+}
+
+.btn-colour-danger {
+  grid-area: btn-colour-danger;
+}
+

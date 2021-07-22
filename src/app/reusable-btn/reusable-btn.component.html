@@ -1,5 +1,9 @@
-<div id = "button">
-  <button type="button" class="btn outline">
+<div id="button">
+  <button type="button" class="btn"
+          [ngClass]="customClass"
+          >
+    <img *ngIf="iconPosition === 'left'" [src]="icon">
     <ng-content></ng-content>
+    <img *ngIf="iconPosition === 'right'" [src]="icon">
   </button>
 </div>

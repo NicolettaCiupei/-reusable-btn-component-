@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 .btn {
   width: 81px;
   height: 36px;
@@ -12,7 +14,7 @@
 .btn p {
   width: max-content;
   height: 20px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -31,6 +33,7 @@
   border: 1px solid #3d5afe;
   background: #fff;
   box-shadow: none;
+  color: #3d5afe;
 }
 
 .outline p {
@@ -41,3 +44,120 @@
 .outline:focus {
   background: rgba(41, 98, 255, 0.1);
 }
+
+.text {
+  background: #fff;
+  box-shadow: none;
+  color: #3d5afe;
+}
+
+.text:hover,
+.text:focus {
+  background: rgba(41, 98, 255, 0.1);
+}
+
+.disableShadow {
+  background: #3d5afe;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.disableShadow:hover,
+.disableShadow:focus {
+  background: #3d5afe;
+}
+
+.disabled {
+  box-shadow: none;
+  color: #9e9e9e;
+}
+
+.disabled:hover,
+.disabled:focus {
+  background: #e0e0e0;
+  cursor: default;
+}
+
+.textDisabled {
+  background: #fff;
+  box-shadow: none;
+  color: #9e9e9e;
+}
+
+.textDisabled:hover,
+.textDisabled:focus {
+  background: #e0e0e0;
+  cursor: default;
+}
+
+.sm {
+  width: 73px;
+  height: 32px;
+  background: #3d5afe;
+  color: #ffffff;
+}
+
+.md {
+  width: 81px;
+  height: 36px;
+  background: #3d5afe;
+  color: #ffffff
+}
+
+.lg {
+  width: 93px;
+  height: 39px;
+  background: #3d5afe;
+  color: #ffffff
+}
+
+.sm:hover, .md:hover, .lg:hover,
+.sm:focus , .md:focus , .lg:focus {
+  background: #3d5afe;
+}
+
+.default {
+  background: #e0e0e0;
+}
+
+.default:hover,
+.default:focus {
+  background: #aeaeae;
+}
+
+.primary {
+  background: #2962ff;
+  box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+  color: #ffffff;
+}
+
+.primary:hover,
+.primary:focus {
+  background: #0039cb;
+}
+
+.secondary {
+  height: 32px;
+  background: #455a64;
+  box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+  color: #ffffff;
+}
+
+.secondary:hover,
+.secondary:focus {
+  background: #1c313a;
+}
+
+.danger {
+  background: #d32f2f;
+  box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+  color: #ffffff;
+}
+.danger:hover,
+.danger:focus {
+  background: #9a0007;
+}
+
+/*app-reusable-btn.inline .btn {*/
+/*  background: red;*/
+/*}*/

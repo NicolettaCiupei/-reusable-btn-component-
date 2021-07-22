@@ -17,7 +17,6 @@ import { NavBarComponent } from './header/nav-bar.component';
     BrowserModule,
     AppRoutingModule
   ],
-  exports: [ ReusableBtnComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
