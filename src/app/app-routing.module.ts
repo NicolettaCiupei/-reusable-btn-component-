@@ -1,15 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ReusableBtnComponent} from "./reusable-btn/reusable-btn.component";
+import {ReusableBtnComponent} from "./display-comp/reusable-btn/reusable-btn.component";
 import {AppComponent} from "./app.component";
+import {NavBarComponent} from "./header/nav-bar.component";
 
-const routes: Routes = [
-  // { path: '', component: AppComponent},
-  // { path: 'reusable-btn', component: ReusableBtnComponent }
+import {DisplayReusableComponent} from "./display-comp/display-reusable.component";
+import {ReusableInputComponent} from "./display-comp/reusable-input/reusable-input.component";
+
+const appRoutes: Routes = [
+  { path: '', component: NavBarComponent },
+  { path: ':type', component: DisplayReusableComponent,
+    // children:
+    //   [
+    //     {path: 'reusable-input', component: ReusableInputComponent},
+    //     {path: 'reusable-btn', component: DisplayReusableComponent}
+    //   ]
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

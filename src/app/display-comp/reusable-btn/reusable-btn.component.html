@@ -2,8 +2,8 @@
   <button type="button" class="btn"
           [ngClass]="customClass"
           >
-    <img *ngIf="iconPosition === 'left'" [src]="icon">
+    <img *ngIf="iconPosition === 'left'" [src]="icon" alt="icon left">
     <ng-content></ng-content>
-    <img *ngIf="iconPosition === 'right'" [src]="icon">
+    <img *ngIf="iconPosition === 'right'" [src]="icon" alt="icon right">
   </button>
 </div>
